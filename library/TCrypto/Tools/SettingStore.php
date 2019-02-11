@@ -4,7 +4,7 @@ namespace TCrypto\Tools;
 /**
  * SettingStore.
  * 
- * @author timoh <timoh6@gmail.com>
+ * @author timoh <achmun0526@gmail.com>
  * @license Public Domain
  */ 
 class SettingStore

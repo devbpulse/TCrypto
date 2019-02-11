@@ -4,7 +4,7 @@ namespace TCrypto\Tools\Keytool;
 /**
  * Filesystem based checks and operations.
  * 
- * @author timoh <timoh6@gmail.com>
+ * @author timoh <achmun0526@gmail.com>
  * @license Public Domain
  */ 
 class Filesystem

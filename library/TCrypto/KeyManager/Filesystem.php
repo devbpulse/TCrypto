@@ -7,7 +7,7 @@ namespace TCrypto\KeyManager;
  * 
  * return array('tcrypto_key_data' => array(...).
  * 
- * @author timoh <timoh6@gmail.com>
+ * @author timoh <achmun0526@gmail.com>
  * @license Public Domain
  */
 class Filesystem implements KeyManagerInterface

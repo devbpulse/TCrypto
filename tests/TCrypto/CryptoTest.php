@@ -32,7 +32,7 @@ class TCrypto_CryptoTest extends PHPUnit_Framework_TestCase
         $keymanager->expects($this->any())->method('getKeyByVersion')->will($this->returnValue('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'));
         $keymanager->expects($this->any())->method('getPrimaryKeyVersion')->will($this->returnValue('xxx'));
         
-        $storage = new TCrypto\StorageHandler\ArrayStorage();
+        $storage = new TCrypto\StorageHandler\TArrayStorage();
         
         $plugins = $this->getMock('TCrypto\\PluginContainer');
         //$plugins->expects($this->once())->method('saveDispatcher')->will($this->returnCallback('serialize'));
@@ -56,7 +56,7 @@ class TCrypto_CryptoTest extends PHPUnit_Framework_TestCase
         $keymanager = $this->getMock('TCrypto\\KeyManager\\Filesystem');
         $keymanager->expects($this->any())->method('getKeyByVersion')->will($this->returnValue('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'));
         
-        $storage = new TCrypto\StorageHandler\ArrayStorage();  
+        $storage = new TCrypto\StorageHandler\TArrayStorage();  
         $plugins = $this->getMock('TCrypto\\PluginContainer');
         
         $tc = new TCrypto\Crypto($keymanager, $storage, $plugins);
@@ -75,7 +75,7 @@ class TCrypto_CryptoTest extends PHPUnit_Framework_TestCase
         if (version_compare(PHP_VERSION, '5.3.2') >= 0)
         {
             $keymanager = $this->getMock('TCrypto\\KeyManager\\Filesystem');
-            $storage = new TCrypto\StorageHandler\ArrayStorage();  
+            $storage = new TCrypto\StorageHandler\TArrayStorage();  
             $plugins = $this->getMock('TCrypto\\PluginContainer');
 
             $hasher = new ReflectionMethod('TCrypto\\Crypto', '_hash');
@@ -96,7 +96,7 @@ class TCrypto_CryptoTest extends PHPUnit_Framework_TestCase
         $keymanager->expects($this->any())->method('getKeyByVersion')->will($this->returnValue('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'));
         $keymanager->expects($this->any())->method('getPrimaryKeyVersion')->will($this->returnValue('xxx'));
 
-        $storage = new TCrypto\StorageHandler\ArrayStorage();
+        $storage = new TCrypto\StorageHandler\TArrayStorage();
 
         $plugins = $this->getMock('TCrypto\\PluginContainer');
         $plugins->expects($this->once())->method('saveDispatcher')->will($this->returnCallback(function ($v, $c) { return serialize($v); }));

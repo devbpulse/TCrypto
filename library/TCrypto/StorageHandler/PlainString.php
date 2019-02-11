@@ -8,7 +8,7 @@ namespace TCrypto\StorageHandler;
  * For example, you can encrypt user-specific third-party tokens before saving them into a database
  * (without the need to use a specific TCrypto "database StorageHandler").
  *
- * @author timoh <timoh6@gmail.com>
+ * @author timoh <achmun0526@gmail.com>
  * @license Public Domain
  */
 class PlainString implements StorageInterface

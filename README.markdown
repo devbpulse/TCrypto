@@ -1,8 +1,6 @@
 About
 =====
 
-[![Build Status](https://secure.travis-ci.org/timoh6/TCrypto.png)](http://travis-ci.org/timoh6/TCrypto)
-
 TCrypto is a simple and flexible PHP 5.3+ in-memory key-value storage library. By default,
 a cookie will be used as a storage backend.
 
@@ -327,4 +325,4 @@ If you use any extra plugins, make sure they operate correctly.
 Issues or questions?
 --------------------
 
-Mail me at timoh6@gmail.com or use GitHub.
+Mail me at achmun0526@gmail.com or use GitHub.

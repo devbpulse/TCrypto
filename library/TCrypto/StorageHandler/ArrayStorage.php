@@ -2,12 +2,12 @@
 namespace TCrypto\StorageHandler;
 
 /**
- * ArrayStorage is used for mocking the storage implementation.
+ * TArrayStorage is used for mocking the storage implementation.
  * 
- * @author timoh <timoh6@gmail.com>
+ * @author timoh <achmun0526@gmail.com>
  * @license Public Domain
  */
-class ArrayStorage implements StorageInterface
+class TArrayStorage implements StorageInterface
 {
     protected $_data = array();
 

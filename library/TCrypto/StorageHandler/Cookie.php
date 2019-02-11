@@ -5,7 +5,7 @@ namespace TCrypto\StorageHandler;
  * This is the default cookie storage implementation. A single cookie can
  * typically hold up to 1-4 KB of data. 
  * 
- * @author timoh <timoh6@gmail.com>
+ * @author timoh <achmun0526@gmail.com>
  * @license Public Domain
  */
 class Cookie implements StorageInterface

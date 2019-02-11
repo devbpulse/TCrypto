@@ -3,10 +3,10 @@ namespace TCrypto\CryptoHandler;
 
 /**
  * 
- * @author timoh <timoh6@gmail.com>
+ * @author timoh <achmun0526@gmail.com>
  * @license Public Domain
  */
-class OpenSslAes128Cbc implements CryptoInterface
+class OpenSslAes128Cbc implements TCryptoInterface
 {
     
     public function __construct()

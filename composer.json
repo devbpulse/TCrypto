@@ -1,7 +1,7 @@
 {
   "name": "tcrypto/tcrypto",
   "description": "Simple and flexible PHP 5.3+ key-value storage library.",
-  "homepage": "https://github.com/timoh6/TCrypto",
+  "homepage": "https://github.com/superdevzhao/TCrypto",
   "type": "library",
   "license": "Public Domain",
   "require": {
