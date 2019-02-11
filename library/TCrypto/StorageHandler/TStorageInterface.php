@@ -6,7 +6,7 @@ namespace TCrypto\StorageHandler;
  * @author timoh <achmun0526@gmail.com>
  * @license Public Domain
  */
-interface StorageInterface
+interface TStorageInterface
 {
     /**
      * Loads the data from a storage (cookie, file, database etc.).

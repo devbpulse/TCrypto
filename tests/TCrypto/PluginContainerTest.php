@@ -4,7 +4,7 @@ class TCrypto_PluginContainerTest extends PHPUnit_Framework_TestCase
    public function testAttachPlugin()
    {
        $pc = new TCrypto\PluginContainer();
-       $pc->attachPlugin(new TCrypto\Plugin\CompressPlugin());
+       $pc->attachPlugin(new TCrypto\Plugin\TCompressPlugin());
    }
    
    public function testPluginChain()
@@ -12,7 +12,7 @@ class TCrypto_PluginContainerTest extends PHPUnit_Framework_TestCase
        $originalData = array('foo' => 123, 'bar' => 'string');
        
        $pc = new TCrypto\PluginContainer();
-       $pc->attachPlugin(new TCrypto\Plugin\CompressPlugin());
+       $pc->attachPlugin(new TCrypto\Plugin\TCompressPlugin());
        
        $dataAfterSaveDispatcher = $pc->saveDispatcher($originalData, false);
        $dataAfterExtractDispatcher = $pc->extractDispatcher($dataAfterSaveDispatcher, false);

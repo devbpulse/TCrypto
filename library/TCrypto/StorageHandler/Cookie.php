@@ -8,7 +8,7 @@ namespace TCrypto\StorageHandler;
  * @author timoh <achmun0526@gmail.com>
  * @license Public Domain
  */
-class Cookie implements StorageInterface
+class Cookie implements TStorageInterface
 {
     protected $_cookieName = 'my_cookie';
     protected $_requireSecure = true;

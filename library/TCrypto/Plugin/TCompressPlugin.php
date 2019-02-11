@@ -6,7 +6,7 @@ namespace TCrypto\Plugin;
  * @author timoh <achmun0526@gmail.com>
  * @license Public Domain
  */
-class CompressPlugin implements PluginInterface
+class TCompressPlugin implements PluginInterface
 {
     public function saveAction($data)
     {

@@ -7,7 +7,7 @@ namespace TCrypto\StorageHandler;
  * @author timoh <achmun0526@gmail.com>
  * @license Public Domain
  */
-class TArrayStorage implements StorageInterface
+class TArrayStorage implements TStorageInterface
 {
     protected $_data = array();
 

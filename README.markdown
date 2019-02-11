@@ -23,7 +23,7 @@ dev-master and 1.0.0.
 Prior to August 6 2013, TCrypto allowed to use data compression when the data was
 also being encrypted. This may lead to disclosure of the (confidential) plain text.
 All TCrypto users are encouraged to update to the current dev-master. Especially
-if CompressPlugin() was used with data encryption.
+if TCompressPlugin() was used with data encryption.
 
 
 TCrypto is placed in the public domain.
@@ -175,7 +175,7 @@ $crypto = new TCrypto\CryptoHandler\McryptAes256Cbc();
 $plugins = new TCrypto\PluginContainer();
 
 // Attach an extra plugin (compress/uncompress) (optional).
-$plugins->attachPlugin(new TCrypto\Plugin\CompressPlugin());
+$plugins->attachPlugin(new TCrypto\Plugin\TCompressPlugin());
 
 // Available options:
 // (array) 'entropy_pool'
@@ -278,9 +278,9 @@ You can also attach more plugins:
 
 ``` php
 <?php
-// NOTE: CompressPlugin will not be run if data encryption is being used.
+// NOTE: TCompressPlugin will not be run if data encryption is being used.
 // This is because data compression leaks information about the plain text.
-$plugins->attachPlugin(new TCrypto\Plugin\CompressPlugin());
+$plugins->attachPlugin(new TCrypto\Plugin\TCompressPlugin());
 ```
 
 Now the data will be first serialized and then compressed (when saving).

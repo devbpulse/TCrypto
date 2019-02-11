@@ -3,7 +3,7 @@
 namespace TCrypto;
 
 use TCrypto\KeyManager\KeyManagerInterface;
-use TCrypto\StorageHandler\StorageInterface;
+use TCrypto\StorageHandler\TStorageInterface;
 use TCrypto\CryptoHandler\TCryptoInterface;
 use TCrypto\Tools\StringUtil;
 
@@ -30,7 +30,7 @@ class Crypto
     protected $_keyManager = null;
     
     /**
-     * @var \TCrypto\StorageHandler\StorageInterface
+     * @var \TCrypto\StorageHandler\TStorageInterface
      */
     protected $_storageHandler = null;
     
@@ -77,14 +77,14 @@ class Crypto
     /**
      *
      * @param \TCrypto\KeyManager\KeyManagerInterface $keyManager
-     * @param \TCrypto\StorageHandler\StorageInterface $storage
+     * @param \TCrypto\StorageHandler\TStorageInterface $storage
      * @param \TCrypto\PluginContainer $plugins
      * @param \TCrypto\CryptoHandler\TCryptoInterface $crypto
      * @param array $options
      */
     public function __construct(
             KeyManagerInterface $keyManager = null,
-            StorageInterface $storage = null,
+            TStorageInterface $storage = null,
             PluginContainer $plugins = null,
             TCryptoInterface $crypto = null,
             array $options = array()
